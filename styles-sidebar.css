@@ -1,0 +1,12 @@
+    body {
+        font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a:link {
+        text-decoration: none;
+    }

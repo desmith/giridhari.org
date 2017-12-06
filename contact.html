@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Contents Page</title>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+
+function verify() {
+	if (document.Feedback.name.value ==""){
+		alert('Please enter your name.');
+		return false;}
+	if (document.Feedback.email.value ==""){
+		alert('Please enter your E-mail address.');
+		return false;}
+	else
+	{return true}
+}
+
+//-->
+</script>
+</head>
+
+<body bgcolor="ffcc99" text="330099" link="5500CC" vlink="6666FF" alink="FF0000">
+<p align="center">&nbsp;</p>
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><b>Please 
+  send us your comments!</b></font></p>
+<form action="/cgi-bin/formmail" method="post" name="Feedback">
+  <table width="65%" border="0" cellspacing="3" cellpadding="3" align="center">
+    <tr> 
+      <td><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Name:</font></b></td>
+      <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <input type="text" name="name" size="35" maxlength="55">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Address:</font></b></td>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <input type="text" name="address" size="35" maxlength="55">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">City</font></b></td>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <input type="text" name="city" size="35" maxlength="55">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">State</font></b></td>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <input type="text" name="state" size="5" maxlength="2">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Zip</font></b></td>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <input type="text" name="zip" size="25" maxlength="25">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">E-mail:</font></b></td>
+      <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <input type="text" name="email" size="35" maxlength="55">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Comment:</font></b></td>
+      <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <textarea name="comment" cols="35" wrap="VIRTUAL" rows="5"></textarea>
+        </font></td>
+    </tr>
+    <tr> 
+      <td><font size="2"></font></td>
+      <td><font size="2"> 
+        <input type="hidden" name="recipient" value="deva@prastha.com">
+        <input type="hidden" name="required" value="name, email">
+        <input type="hidden" name="subject" value="Feedback from Giridhari's web site">
+        <input type="hidden" name="redirect" value="http://www.giridhari.org/thanks.html">
+        </font></td>
+    </tr>
+    <tr> 
+      <td colspan="2"> 
+        <center>
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+          <input type="submit" name="Submit" value="Send Comment" onClick="return verify()">
+          &nbsp; &nbsp; &nbsp; 
+          <input type="reset" name="clear" value="Start Over">
+          </font> 
+        </center>
+      </td>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>
