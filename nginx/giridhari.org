@@ -1,8 +1,0 @@
-server {
-
-  server_name .giridhari.org;
-  root /var/www/giridhari.org;
-
-  include conf.d/common.conf;
-
-}
